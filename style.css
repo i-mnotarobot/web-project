@@ -1,0 +1,38 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: green;
+}
+
+#menu {
+  margin: 0 auto;
+  text-align: center;
+
+  width: 300px;
+
+
+
+}
+#stname {
+ font-size: 50px;
+
+
+
+}
+#play, #play:focus, #play:active {
+	  height: 100px;
+	  width: 200px;
+  margin-top: 100%;
+  font-size: 30px
+  outline: none;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+#draz {
+	padding-top: 50px;
+	font-size: 30px;
+}
