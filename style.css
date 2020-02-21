@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
 }
 
 body {
-	background-color: green;
+	background-color: #4AD17D;
 }
 
 #menu {
@@ -18,6 +24,7 @@ body {
 }
 #stname {
  font-size: 50px;
+ font-family: 'Oswald', s ;
 
 
 
@@ -25,14 +32,24 @@ body {
 #play, #play:focus, #play:active {
 	  height: 100px;
 	  width: 200px;
-  margin-top: 100%;
-  font-size: 30px
+  margin-top: 90%;
+  font-size: 30px;
   outline: none;
-  background-color: lightblue;
-  border-radius: 10px;
+  background-color: #59E4F5;
+  border-radius: 100px;
+  border: #275661 solid 3px;
+  font-family: "Ubuntu", serif;
 }
-
+#play:active {
+    background-color: #3B8494;
+}
+#play:focus {
+    border: #357685 solid 3px;
+}
 #draz {
 	padding-top: 50px;
 	font-size: 30px;
+font-family: 'Roboto Condensed', serif ;
+    
+	
 }
