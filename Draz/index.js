@@ -7,6 +7,8 @@ var insult = document.getElementById("draz");
 var items = [];
 var num = 0;
 var result = document.getElementById("result");
+var moreMenu = document.getElementById("more__popup");
+var vis = false;
 
 function alt() {
 var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 10)];
@@ -27,4 +29,15 @@ function add(){
 function rundom() {
       let rdmNum = Math.floor(Math.random() * items.length);
       result.innerHTML = items[rdmNum];
+}
+
+function more() {
+	if(vis == false){
+		moreMenu.setAttribute("style","display:block;");
+		vis = true;
+	}
+	else if(vis == true){
+		moreMenu.setAttribute("style","display:none;");
+		vis = false;
+	}
 }
