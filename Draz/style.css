@@ -3,7 +3,52 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 * {
 	padding: 0;
@@ -55,9 +100,49 @@ font-family: 'Roboto Condensed', serif ;
 	
 }
 .randomizer {
+  text-align: center;
   display: none;
 }
+
+#addVel {
+  outline: none;
+  border: 2px solid #634ad1;
+  border-radius:  20px 0 0 20px ;
+  width: 200px;
+  height: 30px;
+  background-color: #d14ab8;
+  text-align: center;
+  font-family: 'Montserrat', s;
+  font-size: 15  px;
+
+}
+
+#add {
+  font-family: 'Montserrat', s;
+  height: 30px; 
+  border-radius: 0 20px 20px 0;
+ border: 2px solid #634ad1;
+  outline: none;
+  height: 33px;
+  background-color: #d14ab8;
+  font-size: 16px
+  
+}
+
+#random {
+  height: 30px; 
+  border-radius: 20px ;
+ border: 2px solid #634ad1;
+  outline: none;
+  height: 40px;
+  background-color: #d14ab8;
+  margin: 15px;
+  font-size: 20px;
+    font-family: 'Montserrat', s;
+}
+
 #check {
+
   display: none;
 }
 #but {
@@ -75,6 +160,19 @@ font-family: 'Roboto Condensed', serif ;
     background-color: #d19b4a;
 }
 
-#but:checked {
+#check:checked ~ .randomizer{
     display: block;
+}
+#check:checked ~ #but{
+    background-color: #C3A77C;
+    color: #A43529;
+    border: 2px solid #A43529;
+}
+#result {
+   font-family: 'Open Sans', sans-serif ;
+   font-size: 25px;
+}
+#list {
+  font-family: 'Open Sans', sans-serif ;
+  font-size: 20px;
 }

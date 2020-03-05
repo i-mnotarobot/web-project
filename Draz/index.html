@@ -2,27 +2,31 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="index.js"></script>
+
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
 <body>
-		
+		<!-- Randomizer Starter -->
 			<input type="checkbox" id="check">
 	<label id="but" for="check">РАНДОМАЙЗЕР</label>
-
+     <!-- Randomizer -->
 			<div class="randomizer">
-		<input type="text" name="" >
-		<button onclick="add()">Добавить</button>
+		<input type="text" id="addVel" name="" >
+		<button id="add" onclick="add()">Добавить</button>
 		<ul id="list">
 			
 		</ul>
-		<button id="ramdom" onclick="rundom()">Определить</button>
+		<button id="random" onclick="rundom()">Определить</button>
+		<p id="result"></p>
+
 	</div>
+	<!-- Draznilka -->
 	<div id="menu">
 	<h1 id="stname">ДРАЗНИЛКА</h1>
 	<p id="draz"></p>
     <button id="play" onclick="alt()"> Дразнить! </button>
     </div>
 </body>
+	<script type="text/javascript" src="index.js"></script>
 </html>
