@@ -43,7 +43,7 @@ function add(){
 
 }
 function rundom() {
-      let rdmNum = Math.floor(Math.random() * items.length);
+      let rdmNum = Math.floor(Math.random() * items.length-1);
       result.innerHTML = items[rdmNum];
 }
 
