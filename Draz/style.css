@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,800&display=swap&subset=cyrillic');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -221,4 +222,91 @@ font-family: 'Roboto Condensed', serif ;
 }
 #more__popup{
   transition-delay: 20s;
+}
+#settings{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.60);
+ height: 100%;
+ width: 100%;
+ top: 0;
+
+}
+.settings__inner{
+  font-size: 20pt;
+  background-color: #148B8B;
+  border: 2px solid #006969;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  right: 34%;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+
+}
+/*set-1*/
+/*set-1*/
+
+#close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0%;
+  top: 0;
+}
+
+#set-1,#set-2,#set-3,#set-4,#set-5,#set-6,#set-7,#set-8{
+ float: right;
+}
+#set-1{
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  #btn-1, #btn-2, #btn-3{
+  /*display: inline-block;*/
+  padding: 10px;
+  font-size: 20px;
+
+  
+  }
+}
+
+@media (max-width: 735px) {
+  #btn-1, #btn-2, #btn-3{
+  /*display: inline-block;*/
+  padding: 10px;
+  font-size: 15px;
+  
+  
+  }
+}
+@media (max-width: 635px) {
+  #btn-1, #btn-2, #btn-3{
+  /*display: inline-block;*/
+  padding: 10px;
+  font-size: 20px;
+  
+  
+  }
+  #popup__list {
+    top: 40vh;
+    left: 5vh;
+    border-radius: 30px;
+    width: 45vh;
+
+  }
+  body{
+    height: 100vh;
+  }
+  #more__popup{
+ 
 }

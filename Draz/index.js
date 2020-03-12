@@ -9,6 +9,22 @@ var num = 0;
 var result = document.getElementById("result");
 var moreMenu = document.getElementById("more__popup");
 var vis = false;
+var vis2 = false;
+var setting = document.getElementById("settings");
+var closeImg = document.getElementById("close");
+var setting1 = document.getElementById("set-1");
+var setting2 = document.getElementById("set-2");
+var setting3 = document.getElementById("set-3");
+var setting4 = document.getElementById("set-4");
+var setting5 = document.getElementById("set-5");
+var setting6 = document.getElementById("set-6");
+var setting7 = document.getElementById("set-7");
+var setting8 = document.getElementById("set-8");
+var colors = ["","","","","","","","","","","","","","","","","","",""]
+
+
+
+closeImg.addEventListener('click', close);
 
 function alt() {
 var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 10)];
@@ -39,5 +55,19 @@ function more() {
 	else if(vis == true){
 		moreMenu.setAttribute("style","display:none;");
 		vis = false;
+	}
+}
+function settings() {
+	if(vis2 == false){
+		setting.setAttribute("style","display:block;");
+		vis2 = true;
+	}
+	
+}
+
+function close(){
+	if(vis2 == true){
+		setting.setAttribute("style","display:none;");
+		vis2 = false;
 	}
 }

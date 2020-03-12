@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="style.css">
 	<title>Дразнилка</title>
@@ -14,11 +15,12 @@
 			<div class="touch"></div>
 			<div class="touch"></div>
 		</div>
+		
 		<div id="more__popup" style="display: none;">
 			<ul id="popup__list">
 				<li id="cell-1"><button id="btn-1">Кастомизировать</button></li>
 
-				<li id="cell-2"><button id="btn-2">Настройки</button></li>
+				<li id="cell-2"><button onclick="settings()" id="btn-2">Настройки</button></li>
 				
 				<li id="cell-3"><button id="btn-3">О сайте</button></li>
 			</ul>
@@ -43,6 +45,22 @@
 	<h1 id="stname">ДРАЗНИЛКА</h1>
 	<p id="draz"></p>
     <button id="play" onclick="alt()"> Дразнить! </button>
+    </div>
+    <!-- Settings -->
+    <div id="settings" style="display:none;" >
+    	<div class="settings__inner">
+    		<img src="images/close.png" id="close" onclick="close()"  alt="">
+    		<div id="inner-block1">Шрифт: <input id="set-1" value="0" type="range"></div>
+    		<div id="inner-block2">Цвет фона: <span id="set-2">Стандартный</span></div>
+    		<div id="inner-block3">Цвет кнопки 1: <span id="set-3">Стандартный</span></div>
+    		<div id="inner-block4">Цвет рамки кнопки 1: <span id="set-4">Стандартный</span></div>
+    		<div id="inner-block5">Цвет рандомайзера: <span id="set-5">Стандартный</span></div>
+    		<div id="inner-block6">Цвет текста: <span id="set-6">Стандартный </span></div>
+    		<div id="inner-block7">Цвет кнопки 2: <span id="set-7">Стандартный</span></div>
+    		<div id="inner-block8">Цвет рамки кнопки 2: <span id="set-8">Стандартный</span></div>
+    		<div id="inner-block7">Цвет меню: <span id="set-7">Стандартный</span></div>
+    		<div id="inner-block8">Цвет меню насроек: <span id="set-8">Стандартный</span></div>
+    	</div>
     </div>
 </body>
 	<script type="text/javascript" src="index.js"></script>
