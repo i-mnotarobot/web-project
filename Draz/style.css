@@ -222,6 +222,8 @@ font-family: 'Roboto Condensed', serif ;
 }
 #more__popup{
   transition-delay: 20s;
+  height: 100%;
+  width: 100%;
 }
 #settings{
   position: absolute;
@@ -238,10 +240,13 @@ font-family: 'Roboto Condensed', serif ;
   border-radius: 20px;
   padding: 20px;
   position: absolute;
-  top: 30%;
-  right: 34%;
+  top: calc(50% - 308px/1.5);
+  right: calc(50% - 510px/2);
   font-family: 'Exo 2', sans-serif;
   font-weight: 800;
+  height: 308px;
+  width: 510px;
+
 
 }
 /*set-1*/
@@ -269,6 +274,13 @@ font-family: 'Roboto Condensed', serif ;
 
 
 
+
+@media (max-width: 1437px; max-height: 655;) {
+ #more_popup{
+  right: 6vh;
+ }
+  
+}
 
 @media (max-width: 900px) {
   #btn-1, #btn-2, #btn-3{
@@ -298,15 +310,15 @@ font-family: 'Roboto Condensed', serif ;
   
   }
   #popup__list {
-    top: 40vh;
-    left: 5vh;
+    top: calc(50% - 163px/1.5);
+    left: calc(50% - 342px/2);
     border-radius: 30px;
-    width: 45vh;
+    width: 342px;
+    height: 163px;
+  position: absolute;
 
   }
   body{
     height: 100vh;
   }
-  #more__popup{
- 
-}
+ }
