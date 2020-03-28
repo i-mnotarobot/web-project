@@ -20,8 +20,16 @@ var setting5 = document.getElementById("set-5");
 var setting6 = document.getElementById("set-6");
 var setting7 = document.getElementById("set-7");
 var setting8 = document.getElementById("set-8");
-var colors = ["","","","","","","","","","","","","","","","","","",""]
+var colors = ["green","blue","lightblue","aqua","yellow","gray","pink","black","lime","maroon","red","teal","grey","white","silver","navy","olive","purple","fuchsia"];
 
+
+setting2.addEventListener('click', function (){console.log(this.id) })
+// setting3
+// setting4 
+// setting5
+// setting6
+// setting7
+// setting8
 
 
 closeImg.addEventListener('click', close);
