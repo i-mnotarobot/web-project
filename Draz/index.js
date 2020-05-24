@@ -20,16 +20,39 @@ var setting5 = document.getElementById("set-5");
 var setting6 = document.getElementById("set-6");
 var setting7 = document.getElementById("set-7");
 var setting8 = document.getElementById("set-8");
+var setting9 = document.getElementById("set-9");
+var setting10 = document.getElementById("set-10");
+var setting2StandColor = "#4AD17D"
+var setting3StandColor = "#D19B4A"
+var setting4StandColor = "#d1574a"
+var setting5StandColor = "#D14AB8"
+var setting6StandColor = "#000000"
+var setting7StandColor = "#59E4F5"
+var setting8StandColor = "#275661"
+var setting9StandColor = "#4A5BD1"
+var setting10StandColor = "#148B8B"
 var colors = ["green","blue","lightblue","aqua","yellow","gray","pink","black","lime","maroon","red","teal","grey","white","silver","navy","olive","purple","fuchsia"];
 
+	setting2.setAttribute('prop',0);
+	setting3.setAttribute('prop',0);
+	setting4.setAttribute('prop',0);
+	setting5.setAttribute('prop',0);
+	setting6.setAttribute('prop',0);
+	setting7.setAttribute('prop',0);
+	setting8.setAttribute('prop',0);
+	setting9.setAttribute('prop',0);
+	setting10.setAttribute('prop',0);
 
-setting2.addEventListener('click', function (){console.log(this.id) })
-// setting3
-// setting4 
-// setting5
-// setting6
-// setting7
-// setting8
+setting2.addEventListener('click', function (event){ var d = setting2.getAttribute('prop'); d++; if (d == 19){d=0}; setting2.setAttribute('prop', d); })
+setting3.addEventListener('click', function (event){ var d = setting3.getAttribute('prop'); d++; if (d == 19){d=0}; setting3.setAttribute('prop', d);})
+setting4.addEventListener('click', function (event){ var d = setting4.getAttribute('prop'); d++; if (d == 19){d=0}; setting4.setAttribute('prop', d);})
+setting5.addEventListener('click', function (event){ var d = setting5.getAttribute('prop'); d++; if (d == 19){d=0}; setting5.setAttribute('prop', d);})
+setting6.addEventListener('click', function (event){ var d = setting6.getAttribute('prop'); d++; if (d == 19){d=0}; setting6.setAttribute('prop', d);})
+setting7.addEventListener('click', function (event){ var d = setting7.getAttribute('prop'); d++; if (d == 19){d=0}; setting7.setAttribute('prop', d);})
+setting8.addEventListener('click', function (event){ var d = setting8.getAttribute('prop'); d++; if (d == 19){d=0}; setting8.setAttribute('prop', d);})
+setting9.addEventListener('click', function (event){ var d = setting9.getAttribute('prop'); d++; if (d == 19){d=0}; setting9.setAttribute('prop', d);})
+setting10.addEventListener('click', function (event){ var d = setting10.getAttribute('prop'); d++; if (d == 19){d=0}; setting10.setAttribute('prop', d);})
+
 
 
 closeImg.addEventListener('click', close);
@@ -57,7 +80,7 @@ function rundom() {
 
 function more() {
 	if(vis == false){
-		moreMenu.setAttribute("style","display:block;");
+		moreMenu.setAttribute("style","display:block; background-color: rgba(0, 0, 0, 10);");
 		vis = true;
 	}
 	else if(vis == true){
@@ -79,3 +102,27 @@ function close(){
 		vis2 = false;
 	}
 }
+
+
+function refresh(num, setting) {
+	switch (num) {
+		case 0 :
+		setting.textContent = "Стандартный";
+		break;
+		case 1 :
+		setting.textContent = "Зелёный";
+		break;
+	} 
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

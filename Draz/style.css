@@ -240,8 +240,10 @@ font-family: 'Roboto Condensed', serif ;
   border-radius: 20px;
   padding: 20px;
   position: absolute;
-  top: calc(50% - 308px/1.5);
-  right: calc(50% - 510px/2);
+  top: 50%;
+  right: 50%;
+  margin-right: -255px;
+  margin-top: -154px;
   font-family: 'Exo 2', sans-serif;
   font-weight: 800;
   height: 308px;
@@ -260,8 +262,9 @@ font-family: 'Roboto Condensed', serif ;
   top: 0;
 }
 
-#set-1,#set-2,#set-3,#set-4,#set-5,#set-6,#set-7,#set-8{
+#set-1,#set-2,#set-3,#set-4,#set-5,#set-6,#set-7,#set-8,#set-9,#set-10{
  float: right;
+ cursor: pointer;
 }
 #set-1{
   margin-right: 20px;
@@ -300,6 +303,21 @@ font-family: 'Roboto Condensed', serif ;
   
   
   }
+  .settings__inner{
+  font-size: 14pt;
+  background-color: #148B8B;
+  border: 2px solid #006969;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -205px;
+  margin-top: -170px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  height: 205px;
+  width: 340px;
 }
 @media (max-width: 635px) {
   #btn-1, #btn-2, #btn-3{
