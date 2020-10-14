@@ -43,15 +43,15 @@ var colors = ["green","blue","lightblue","aqua","yellow","gray","pink","black","
 	setting9.setAttribute('prop',0);
 	setting10.setAttribute('prop',0);
 
-setting2.addEventListener('click', function (event){ var d = setting2.getAttribute('prop'); d++; if (d == 19){d=0}; setting2.setAttribute('prop', d); })
-setting3.addEventListener('click', function (event){ var d = setting3.getAttribute('prop'); d++; if (d == 19){d=0}; setting3.setAttribute('prop', d);})
-setting4.addEventListener('click', function (event){ var d = setting4.getAttribute('prop'); d++; if (d == 19){d=0}; setting4.setAttribute('prop', d);})
-setting5.addEventListener('click', function (event){ var d = setting5.getAttribute('prop'); d++; if (d == 19){d=0}; setting5.setAttribute('prop', d);})
-setting6.addEventListener('click', function (event){ var d = setting6.getAttribute('prop'); d++; if (d == 19){d=0}; setting6.setAttribute('prop', d);})
-setting7.addEventListener('click', function (event){ var d = setting7.getAttribute('prop'); d++; if (d == 19){d=0}; setting7.setAttribute('prop', d);})
-setting8.addEventListener('click', function (event){ var d = setting8.getAttribute('prop'); d++; if (d == 19){d=0}; setting8.setAttribute('prop', d);})
-setting9.addEventListener('click', function (event){ var d = setting9.getAttribute('prop'); d++; if (d == 19){d=0}; setting9.setAttribute('prop', d);})
-setting10.addEventListener('click', function (event){ var d = setting10.getAttribute('prop'); d++; if (d == 19){d=0}; setting10.setAttribute('prop', d);})
+// setting2.addEventListener('click', function (event){ var d = setting2.getAttribute('prop'); d++; if (d == 19){d=0}; setting2.setAttribute('prop', d);refresh(setting2.getAttribute('prop'), setting2); } refresh(setting2.getAttribute('prop'), setting2);)
+// setting3.addEventListener('click', function (event){ var d = setting3.getAttribute('prop'); d++; if (d == 19){d=0}; setting3.setAttribute('prop', d);})
+// setting4.addEventListener('click', function (event){ var d = setting4.getAttribute('prop'); d++; if (d == 19){d=0}; setting4.setAttribute('prop', d);})
+// setting5.addEventListener('click', function (event){ var d = setting5.getAttribute('prop'); d++; if (d == 19){d=0}; setting5.setAttribute('prop', d);})
+// setting6.addEventListener('click', function (event){ var d = setting6.getAttribute('prop'); d++; if (d == 19){d=0}; setting6.setAttribute('prop', d);})
+// setting7.addEventListener('click', function (event){ var d = setting7.getAttribute('prop'); d++; if (d == 19){d=0}; setting7.setAttribute('prop', d);})
+// setting8.addEventListener('click', function (event){ var d = setting8.getAttribute('prop'); d++; if (d == 19){d=0}; setting8.setAttribute('prop', d);})
+// setting9.addEventListener('click', function (event){ var d = setting9.getAttribute('prop'); d++; if (d == 19){d=0}; setting9.setAttribute('prop', d);})
+// setting10.addEventListener('click', function (event){ var d = setting10.getAttribute('prop'); d++; if (d == 19){d=0}; setting10.setAttribute('prop', d);})
 
 
 
@@ -104,16 +104,16 @@ function close(){
 }
 
 
-function refresh(num, setting) {
-	switch (num) {
-		case 0 :
-		setting.textContent = "Стандартный";
-		break;
-		case 1 :
-		setting.textContent = "Зелёный";
-		break;
-	} 
-}
+// function refresh(num, setting) {
+// 	switch (num) {
+// 		case 0 :
+// 		setting.textContent = "Стандартный";
+// 		break;
+// 		case 1 :
+// 		setting.textContent = "Зелёный";
+// 		break;
+// 	} 
+// }
 
 
 
