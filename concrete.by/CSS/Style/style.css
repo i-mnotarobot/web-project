@@ -1,0 +1,9 @@
+#header-menu {
+	list-style-type: none;
+
+}
+.menu-section {
+	float: left;
+	font-size: 20pt;
+	padding: 1vw;
+}
