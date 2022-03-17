@@ -106,7 +106,7 @@ function close(){
 
 // function refresh(num, setting) {
 // 	switch (num) {
-// 		case 0 :
+// 		case  0 :
 // 		setting.textContent = "Стандартный";
 // 		break;
 // 		case 1 :
