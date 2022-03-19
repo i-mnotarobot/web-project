@@ -12,12 +12,12 @@ html{
 		 url(../fonts/Corporate-A-Bold.woff) format('woff');
 }
 body{
-	background-color: #070A1B;
 	font-size: 16pt;
 	font-weight: 400;
 	line-height: 120%;
 	color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
+	background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
 }
 a{
 	text-decoration: none;
@@ -108,6 +108,9 @@ ul{
 	justify-content: space-between;
 	align-items: center;
 }
+.footer{
+	background-color: #070A1B;
+}
 .concept{
 	padding-top: 150px;
 	margin-bottom: 150px;
@@ -117,7 +120,7 @@ ul{
 	margin-left: auto;
 	
 }
-.section-title{
+.section__title{
 	margin-bottom: 25px;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -128,4 +131,89 @@ ul{
 	font-size: 24px;
 	margin-bottom: 25px;
 	line-height: 120%;
+}
+.premier__column{
+	max-width: 570px;	
+}
+.premier__inner{
+	display: flex;
+	gap: 60px;
+}
+.premier{
+	margin-bottom: 150px;
+}
+.premier__text {
+	margin-bottom: 20.5px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+}
+.premier__img{
+	margin-bottom: 23px;
+}
+.section__btn{
+	display: block;
+	width: 100%;
+	color:#F402A2;
+	border: 1px solid #F402A2;
+	height: 50px;
+	text-transform: uppercase;
+	line-height: 120%;
+	font-size: 18px;
+	font-family: 'Corporate-A-Bold';
+	transition: all 0.3s;
+
+}
+.section__btn:hover{
+	color: #53A1CB;
+	border-color: #53A1CB;
+
+}
+.section__btn:hover path{
+	fill: #53A1CB;
+}
+path{
+	transition: all 0.3s;
+}
+.video {
+	margin-bottom: 150px;
+}
+.video__img{
+	margin-bottom: 25px;
+}
+.section__btn svg, .section__btn span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.logo{
+	padding-left: 8vw;
+}
+.design__interior{
+	display: grid;
+	grid-template-columns: 255px 255px auto 330px;
+	grid-template-rows: auto auto;
+	gap: 14px 44px;
+}
+.design__cell-one{
+	grid-row: 1/3;
+}
+.design__cell-two{ 
+	grid-row-end: -1;
+	display: flex;
+	align-items: flex-end;
+}
+.design__cell-three{
+	grid-row-end: -1;
+	grid-column-end: -1;
+	display: flex;
+	align-items: flex-end;
+}
+.design__cell-text{
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	margin-bottom: 15px;
 }
